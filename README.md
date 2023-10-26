@@ -6,6 +6,6 @@ Projet fun pour la blague et eventuellement ajouter des foonctionalités blockch
 
 Aussi pour entretenir mes compétence sur ReactJS en front...
 
-![Alt text](src/assets/image.png)
+![Alt text](src/assets/screen.png)
 
 demo : (pas encore de démo)
