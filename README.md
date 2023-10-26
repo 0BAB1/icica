@@ -2,4 +2,8 @@
 
 Basé sur un même français.
 
-demo : icica.webwants.Fr
+Projet fun pour la blague et eventuellement ajouter des foonctionalités blockchain avec ça.
+
+Aussi pour entretenir mes compétence sur ReactJS en front...
+
+demo : (pas encore de démo)
