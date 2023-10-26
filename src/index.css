@@ -1,13 +1,72 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'IBM Plex Serif', serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Header stuff */
+
+.Header{
+  width: 100vw;
+  height : 20vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.Header p{
+  font-size: .5em;
+}
+
+.Header h1{
+  height: fit-content;
+}
+
+/* Banner stuff */
+
+.Banner{
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  background-image: url('assets/ttool.jpg'); 
+  background-size: 100% auto;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+
+.Banner::before {
+  width: 100vw;
+  min-height: 80vh;
+  height:inherit;
+  content: "";
+  position: absolute;
+  backdrop-filter: blur(7px);
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.Banner .content{
+  width: 65vw;
+  color: white;
+  z-index: 1;
+}
+
+.Banner .content h1{
+  font-size: 4em;
+  margin-top: 5vw;
+  width: 70vw;
+}
+
+.Banner .content h2{
+  max-width: 600px;
+  width: 50vw;
+  text-align: justify;
+  font-size: 1.4em;
+  margin-top: 5vw;
 }
