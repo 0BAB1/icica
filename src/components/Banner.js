@@ -5,7 +5,7 @@ function Banner() {
     const [mouseCoordinates, setMouseCoordinates] = useState("0px, 0px");
 
     const mouseMoveHandler = (event) => {
-        setMouseCoordinates(`${event.clientX/100 -10}px ${event.clientY/100 -10}px`);
+        setMouseCoordinates(`${event.clientX/50 -20}px ${event.clientY/50 -20}px`);
     }
   		
   	useEffect(()=>{

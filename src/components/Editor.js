@@ -7,19 +7,20 @@ function Editor() {
         setText(event.target.value.slice(0, 10));
     };
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        // Do something with the text, like send it to a server or update the image
-    };
-
     return (
         <div className='Editor'>
-            <form onSubmit={handleSubmit}>
+            <form
+                component="form"
+                sx={{
+                    '& > :not(style)': { m: 1, width: '25ch'},
+                }}
+                noValidate
+                autoComplete="off"
+            >
                 <label>
-                    Text:
-                    <input type='text' value={text} onChange={handleTextChange} maxLength={10} />
+                    <input onChange={handleTextChange} type="text"/>
                 </label>
-                <button type='submit'>Submit</button>
+                <button>Ok</button>
             </form>
             <div className='Image'>
                 {text}
