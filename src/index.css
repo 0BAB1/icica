@@ -95,31 +95,45 @@ body{
   flex-direction: column;
 }
 
+@keyframes rgb{
+  0% {
+    box-shadow: 0px 0px 20px blueviolet;
+  }
+  50%{
+    box-shadow: 0px 0px 20px rgb(71, 102, 255);
+  }
+  100% {
+    box-shadow: 0px 0px 20px blueviolet;
+  }
+}
+
 .Image{
-  height: 100vh;
+  height: 500px;
   aspect-ratio: 0.65;
   background-image: url('assets/modifiable.png'); 
   background-size: cover;
   border-radius: 20px;
   box-shadow: 0px 0px 20px white;
+  animation: rgb 4s linear infinite;
 }
 
-button{
+.form-button{
   transition: all 0.4s;
   font-size: 1em;
   background-color: white;
   color: black;
   border: none;
   border-radius: 5px;
-  padding: 5px 15px;
+  padding: 7px 20px;
   width: fit-content;
 }
 
-button:hover{
+.form-button:hover{
   transition: all 0.4s;
   background-color: black;
   color: white;
   box-shadow: 0 0 10px white;
+  cursor: pointer;
 }
 
 input[type="text"]{
@@ -131,8 +145,69 @@ input[type="text"]{
   border-bottom: 2px solid white;
   color: white;
   font-size: 1em;
+  padding: 5px;
 }
 
 input:focus{
   outline: none;
+}
+
+.Image p{
+  font-size: 0.93em;
+}
+
+.text1{
+  position: relative;
+  top: 110px;
+  left: 83px;
+}
+
+.text2{
+  position: relative;
+  top: 399px;
+  left: 100px;
+}
+
+/* Question and Answer component */
+
+.QandA{
+  width: fit-content;
+  margin-bottom: 25px;
+  width: 90vw;
+}
+
+.QandA button{
+  width: fit-content;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid white;
+  color: white;
+  padding: 5px;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.QandA button:hover{
+  cursor: pointer;
+}
+
+.QandA img{
+  margin-left: 20px;
+}
+
+.QandA p{
+  color: white;
+  margin-top: 20px;
+}
+
+/* Tutorial component stuff */
+
+.Tutorial{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

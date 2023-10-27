@@ -20,10 +20,11 @@ function Editor() {
                 <label>
                     <input onChange={handleTextChange} type="text"/>
                 </label>
-                <button>Ok</button>
+                <button className='form-button'>Ok</button>
             </form>
             <div className='Image'>
-                {text}
+                <p className='text1'>{text} ?</p>
+                <p className='text2'>{text}</p>
             </div>
         </div>
     );
