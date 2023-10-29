@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 
 function QandA({ question, answer }) {
-    const [isOpen, setIsOpen] = useState(false);
+    const [className, setClassName] = useState("closed");
 
     const toggleOpen = () => {
-        setIsOpen(!isOpen);
+        if(className === "closed") setClassName("open");
+        if(className === "open") setClassName("closed");
     };
 
     return (
@@ -13,7 +14,9 @@ function QandA({ question, answer }) {
                 {question}
                 <img src='Qarrow.svg' alt='Actual memes'/>
             </button>
-            {isOpen && <p>{answer}</p>}
+            <div className={"answer-wrapper " + className}>
+                <div>{answer}</div>
+            </div>
         </div>
     );
 }
