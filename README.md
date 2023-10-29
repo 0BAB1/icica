@@ -9,3 +9,7 @@ Aussi pour entretenir mes compétence sur ReactJS en front...
 ![Alt text](src/assets/screen.png)
 
 demo : (pas encore de démo)
+
+## Setup for dev
+
+```npm i; npm start```
