@@ -75,10 +75,22 @@ body{
   margin-top: 5vw;
 }
 
+.Banner:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0,0,0, 1) 90%);
+  width: 100%;
+  height: 4em;
+}
+
 /* editor stuff */
 
 .Editor{
-  height: fit-content;
+  height:fit-content;
   display: flex;
   width: 100vw;
   justify-content: space-around;
@@ -108,7 +120,7 @@ body{
 }
 
 .Image{
-  height: 500px;
+  height: 700px;
   aspect-ratio: 0.65;
   background-image: url('assets/modifiable.png'); 
   background-size: cover;
@@ -153,19 +165,21 @@ input:focus{
 }
 
 .Image p{
-  font-size: 0.93em;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
 }
 
 .text1{
   position: relative;
-  top: 110px;
-  left: 83px;
+  top: 155px;
+  left: 115px;
 }
 
 .text2{
   position: relative;
-  top: 399px;
-  left: 100px;
+  top: 561px;
+  left: 142px;
 }
 
 /* Question and Answer component */

@@ -7,7 +7,6 @@ function QandA({ question, answer }) {
         if(className === "closed") setClassName("open");
         if(className === "open") setClassName("closed");
     };
-
     return (
         <div className='QandA'>
             <button className='question button' onClick={toggleOpen}>
