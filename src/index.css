@@ -16,7 +16,7 @@ body{
 .Header{
   width: 100vw;
   height : 20vh;
-  background-color: black;
+  background-color: transparent;
   color: white;
   display: flex;
   justify-content: space-around;
@@ -25,13 +25,36 @@ body{
 }
 
 .Header p{
-  font-size: .5em;
+  font-size: 0.9em;
 }
 
 .Header h1{
   height: fit-content;
+  font-size: 3em;
 }
 
+.wallet-button{
+  transition: all 0.4s;
+  font-size: 1em;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 7px 20px;
+  width: fit-content;
+}
+
+.wallet-button:hover{
+  transition: all 0.4s;
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 10px white;
+  cursor: pointer;
+}
+
+.dummy{
+  width: 200px;
+}
 /* Banner stuff */
 
 .Banner{
@@ -62,7 +85,7 @@ body{
 }
 
 .Banner .content h1{
-  font-size: 4em;
+  font-size: 3.4em;
   margin-top: 5vw;
   width: 70vw;
 }
@@ -71,7 +94,7 @@ body{
   max-width: 600px;
   width: 50vw;
   text-align: justify;
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin-top: 5vw;
 }
 

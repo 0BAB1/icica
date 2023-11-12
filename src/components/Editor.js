@@ -32,9 +32,6 @@ function Editor() {
             link.href = canvas.toDataURL('image/png');
             link.click();
         };
-
-        //hardhat testing
-        const [selectedAddress] = await window.ethereum.request({ method: 'eth_requestAccounts' }); //get adress from metamask
       };
 
     return (
