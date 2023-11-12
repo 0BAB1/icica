@@ -19,3 +19,7 @@ Me rafraichir la mémoire sur React et avoir une application de base pour jouer 
 ## Setup for dev
 
 `npm i; npm start`
+
+## Notes pour moi-même :
+
+[https://github.com/NomicFoundation/hardhat-boilerplate/blob/master/frontend/src/components/Dapp.js#L168][Lien boilerplate frontend]

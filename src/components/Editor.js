@@ -7,7 +7,7 @@ function Editor() {
         setText(event.target.value.slice(0, 5));
     };
 
-    const downloadImage = (e) => {
+    const downloadImage = async (e) => {
         e.preventDefault();
         console.log("test")
         const canvas = document.createElement('canvas');
@@ -17,21 +17,24 @@ function Editor() {
         img.src = "modifiable.png";
       
         img.onload = () => {
-          canvas.width = img.width;
-          canvas.height = img.height;
-      
-          ctx.drawImage(img, 0, 0);
-      
-          ctx.font = '34px Arial';
-          ctx.fillStyle = 'white';
-          ctx.fillText(text + " ?", 187, 284);
-          ctx.fillText(text, 230, 984);
-      
-          const link = document.createElement('a');
-          link.download = 'custom-image.png';
-          link.href = canvas.toDataURL('image/png');
-          link.click();
+            canvas.width = img.width;
+            canvas.height = img.height;
+        
+            ctx.drawImage(img, 0, 0);
+        
+            ctx.font = '34px Arial';
+            ctx.fillStyle = 'white';
+            ctx.fillText(text + " ?", 187, 284);
+            ctx.fillText(text, 230, 984);
+        
+            const link = document.createElement('a');
+            link.download = 'custom-image.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
         };
+
+        //hardhat testing
+        const [selectedAddress] = await window.ethereum.request({ method: 'eth_requestAccounts' }); //get adress from metamask
       };
 
     return (
