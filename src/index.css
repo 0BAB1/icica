@@ -209,13 +209,13 @@ input:focus{
 
 .QandA{
   width: fit-content;
-  margin-bottom: 25px;
   width: 95%;
+  margin-top: 30x;
+  margin-bottom: 20px;
 }
 
 .answer-wrapper{
   color: white;
-  margin-top: 20px;
   overflow: hidden;
   height: fit-content;
 
@@ -247,6 +247,8 @@ input:focus{
   align-items: center;
   justify-content: space-between;
   background-color: transparent;
+
+  margin-bottom: 15px;
 }
 
 .QandA button:hover{
@@ -274,7 +276,7 @@ input:focus{
 }
 
 .tuto-wrapper{
-  padding: 60px;
+  padding-top: 50px;
   margin-top: 200px;
   margin-bottom: 100px;
   background-color: rgb(15,15,20);
