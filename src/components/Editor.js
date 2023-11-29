@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Editor() {
+function Editor({mint}) {
     const [text, setText] = useState('');
 
     const handleTextChange = (event) => {
@@ -32,6 +32,9 @@ function Editor() {
             link.href = canvas.toDataURL('image/png');
             link.click();
         };
+
+        // Mint the NFT
+        mint();
       };
 
     return (
@@ -47,7 +50,7 @@ function Editor() {
                 <label>
                     <input onChange={handleTextChange} type="text"/>
                 </label>
-                <button className='form-button' onClick={downloadImage}>Ok</button>
+                <button className='form-button' onClick={downloadImage}>Créer NFT</button>
             </form>
             <div className='Image'>
                 <p className='text1'>{text} ?</p>
